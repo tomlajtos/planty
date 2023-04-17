@@ -5,6 +5,7 @@ import './App.css'
 
 import { PlantList } from './components/PlantList.jsx'
 import { Button } from "./components/ui/Button"
+import { SquareButton } from "./components/ui/SquareButton"
 import { PlantForm } from './components/PlantForm';
 
 function App() {
@@ -15,11 +16,11 @@ function App() {
       <PlantForm submitFn={(e) => {
         e.preventDefault();
         console.log("form submitted")
-
       }} />
       <div className='mx-auto py-3 text-2xl align-center mb-4 h-16 w-full max-w-5xl bg-purple-200'>
         Menu-buttons:
-        <Button className="mx-2 w-11 h-11  bg-emerald-900 rounded-lg text-3xl text-white" type={"button"} text={"+"} clickFn={() => alert("Click-click-clik")} />
+        <SquareButton className="bg-emerald-900" type={"button"} text={"+"} clickFn={() => console.log("CLICK")} />
+        <SquareButton className="bg-red-900" type={"button"} text={"-"} clickFn={() => console.log("CLICK")} />
       </div>
       {myPlants && (<PlantList plants={myPlants} />)}
     </div>
