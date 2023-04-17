@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold mb-4">Plant Manager</h1>
+      <h1 className="text-3xl font-bold mb-4">Plant[Y]</h1>
       <PlantForm submitFn={(e) => {
         e.preventDefault();
         console.log("form submitted")
