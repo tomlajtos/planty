@@ -12,21 +12,21 @@ export const PlantForm = ({ submitFn }) => {
         labelText={"Name: "}
         id={"name"}
         name={"name"}
-        changeFn={(e) => console.log(e.target.value)}
+        // changeFn={(e) => console.log(e.target.value)}
       />
       <FormTextInput
         htmlFor={"sciName"}
         labelText={"Scientific Name: "}
         id={"sciName"}
         name={"sciName"}
-        changeFn={(e) => console.log(e.target.value)}
+        // changeFn={(e) => console.log(e.target.value)}
       />
       <FormTextInput
         htmlFor={"nameT"}
         labelText={"Text input test: "}
         id={"nameT"}
         name={"nameT"}
-        changeFn={(e) => console.log(e.target.value)}
+        // changeFn={(e) => console.log(e.target.value)}
       />
       <label>
         Date of purchase: <input type="date" name="purchaseDate" />

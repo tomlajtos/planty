@@ -4,10 +4,10 @@ export const PlantCard = ({ plant }) => {
       <h2 className="Name text-xl mb-4 font-semibold">{plant.name}</h2>
       <img
         className="PlantPic h-20 w-20 my-2 mx-auto border-2 rounded-xl"
-        src={plant.img}
-        alt={plant.alt}
+        src={plant.img_url}
+        alt={plant.img_alt}
       />
-      <p className="PlantInfo">{plant.info}</p>
+      <p className="PlantInfo">plant info comes here</p>
     </li>
   );
 };

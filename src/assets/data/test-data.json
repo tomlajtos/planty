@@ -1,0 +1,96 @@
+{
+  "plants": [
+    {
+      "id": "1",
+      "name": "Plant One",
+      "scientific_name": "",
+      "special_id": "in case there are multiple one of the same spieces",
+      "img_url": "./src/assets/images/stock_plant.jpg",
+      "img_alt": "Picture of a potted plant",
+      "info": {
+        "light": "indirekt-high",
+        "water": {
+          "frequency_summer": ["1", "week"],
+          "frequency_winter": ["1", "bi-week"],
+          "amount": "moderate"
+        },
+        "soil": "normal + 10% perlite",
+        "last_watered": "date",
+        "last_fertilized": "date",
+        "last_rePotted": "date or null",
+        "watch": false,
+        "history_water": [],
+        "history_watch": []
+      }
+    },
+    {
+      "id": "2",
+      "name": "Plant Two",
+      "scientific_name": "",
+      "special_id": "in case there are multiple one of the same spieces",
+      "img_url": "./src/assets/images/stock_plant.jpg",
+      "img_alt": "Picture of a potted plant",
+      "info": {
+        "light": "indirekt-high",
+        "water": {
+          "frequency_summer": ["1", "week"],
+          "frequency_winter": ["1", "bi-week"],
+          "amount": "moderate"
+        },
+        "soil": "normal + 10% perlite",
+        "last_watered": "date",
+        "last_fertilized": "date",
+        "last_rePotted": "date or null",
+        "watch": false,
+        "history_water": [],
+        "history_watch": []
+      }
+    },
+    {
+      "id": "3",
+      "name": "Plant Three",
+      "scientific_name": "",
+      "special_id": "in case there are multiple one of the same spieces",
+      "img_url": "./src/assets/images/stock_plant.jpg",
+      "img_alt": "Picture of a potted plant",
+      "info": {
+        "light": "indirekt-high",
+        "water": {
+          "frequency_summer": ["1", "week"],
+          "frequency_winter": ["1", "bi-week"],
+          "amount": "moderate"
+        },
+        "soil": "normal + 10% perlite",
+        "last_watered": "date",
+        "last_fertilized": "date",
+        "last_rePotted": "date or null",
+        "watch": false,
+        "history_water": [],
+        "history_watch": []
+      }
+    },
+    {
+      "id": "4",
+      "name": "Plant Four",
+      "scientific_name": "",
+      "special_id": "in case there are multiple one of the same spieces",
+      "img_url": "./src/assets/images/stock_plant.jpg",
+      "img_alt": "Picture of a potted plant",
+      "info": {
+        "light": "indirekt-high",
+        "water": {
+          "frequency_summer": ["1", "week"],
+          "frequency_winter": ["1", "bi-week"],
+          "amount": "moderate"
+        },
+        "soil": "normal + 10% perlite",
+        "last_watered": "date",
+        "last_fertilized": "date",
+        "last_rePotted": "date or null",
+        "watch": false,
+        "history_water": [],
+        "history_watch": []
+      }
+    }
+  ]
+}
