@@ -30,32 +30,31 @@ function App() {
     };
   }, []);
   // console.log("plants after fetch", plants)
-  console.log(plants);
+  // console.log(plants);
   return (
-    <div className="App">
+    <div className="App py-4 px-2">
       <h1 className="text-3xl font-bold mb-4">Plant[Y]</h1>
-      <div className="mx-auto py-3 text-2xl align-center mb-4 h-16 w-full max-w-5xl bg-purple-200">
-        Menu-buttons:
+      <div className="mx-auto py-3 text-2xl align-center mb-4 h-16 w-full max-w-5xl border border-zinc-200">
         <SquareButton
-          className="bg-emerald-900"
+          className="bg-white hover:shadow-md hover:shadow-green-300 hover:ring-1 ring-green-500"
           type={"button"}
-          text={"+"}
+          text={"add plant"}
           clickFn={() => console.log("CLICK")}
         />
         <SquareButton
-          className="bg-red-900"
+          className="bg-white hover:shadow-md hover:shadow-red-400 hover:ring-1 ring-red-600"
           type={"button"}
-          text={"-"}
+          text={"remove"}
           clickFn={() => console.log("CLICK")}
         />
       </div>
       {plants && <PlantList plants={plants} />}
-      <PlantForm
-        submitFn={(e) => {
-          e.preventDefault();
-          console.log("form submitted");
-        }}
-      />
+      {/* <PlantForm
+      //   submitFn={(e) => {
+      //     e.preventDefault();
+      //     console.log("form submitted");
+      //   }}
+      // /> */}
     </div>
   );
 }
