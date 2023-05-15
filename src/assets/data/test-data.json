@@ -7,21 +7,31 @@
       "special_id": "in case there are multiple one of the same spieces",
       "img_url": "./src/assets/images/stock_plant.jpg",
       "img_alt": "Picture of a potted plant",
-      "info": {
-        "light": "indirekt-high",
-        "water": {
+      "info": [
+        {
+          "category": "light",
+          "exposure": "direct-filtered",
+          "intensity": "bright-mid-low",
+          "exp_time": "high"
+        },
+        {
+          "category": "water",
           "frequency_summer": ["1", "week"],
           "frequency_winter": ["1", "bi-week"],
           "amount": "moderate"
         },
-        "soil": "normal + 10% perlite",
-        "last_watered": "date",
-        "last_fertilized": "date",
-        "last_rePotted": "date or null",
-        "watch": false,
-        "history_water": [],
-        "history_watch": []
-      }
+        { "category": "soil", "type": "normal + 10% perlite" },
+        { "category": "temperature", "unit": "C", "min": 12, "max": 28 },
+        { "category": "humidity", "level": "high" },
+        {
+          "category": "care_record",
+          "last_watered": "date",
+          "last_fertilized": "date",
+          "last_rePotted": "date or null",
+          "watch": false
+        },
+        { "category": "care_history", "history_water": [], "history_watch": [] }
+      ]
     },
     {
       "id": "2",
@@ -30,21 +40,31 @@
       "special_id": "in case there are multiple one of the same spieces",
       "img_url": "./src/assets/images/stock_plant.jpg",
       "img_alt": "Picture of a potted plant",
-      "info": {
-        "light": "indirekt-high",
-        "water": {
+      "info": [
+        {
+          "category": "light",
+          "exposure": "direct-filtered",
+          "intensity": "bright-mid-low",
+          "exp_time": "high"
+        },
+        {
+          "category": "water",
           "frequency_summer": ["1", "week"],
           "frequency_winter": ["1", "bi-week"],
           "amount": "moderate"
         },
-        "soil": "normal + 10% perlite",
-        "last_watered": "date",
-        "last_fertilized": "date",
-        "last_rePotted": "date or null",
-        "watch": false,
-        "history_water": [],
-        "history_watch": []
-      }
+        { "category": "soil", "type": "normal + 10% perlite" },
+        { "category": "temperature", "unit": "C", "min": 12, "max": 28 },
+        { "category": "humidity", "level": "high" },
+        {
+          "category": "care_record",
+          "last_watered": "date",
+          "last_fertilized": "date",
+          "last_rePotted": "date or null",
+          "watch": false
+        },
+        { "category": "care_history", "history_water": [], "history_watch": [] }
+      ]
     },
     {
       "id": "3",
@@ -53,21 +73,31 @@
       "special_id": "in case there are multiple one of the same spieces",
       "img_url": "./src/assets/images/stock_plant.jpg",
       "img_alt": "Picture of a potted plant",
-      "info": {
-        "light": "indirekt-high",
-        "water": {
+      "info": [
+        {
+          "category": "light",
+          "exposure": "direct-filtered",
+          "intensity": "bright-mid-low",
+          "exp_time": "high"
+        },
+        {
+          "category": "water",
           "frequency_summer": ["1", "week"],
           "frequency_winter": ["1", "bi-week"],
           "amount": "moderate"
         },
-        "soil": "normal + 10% perlite",
-        "last_watered": "date",
-        "last_fertilized": "date",
-        "last_rePotted": "date or null",
-        "watch": false,
-        "history_water": [],
-        "history_watch": []
-      }
+        { "category": "soil", "type": "normal + 10% perlite" },
+        { "category": "temperature", "unit": "C", "min": 12, "max": 28 },
+        { "category": "humidity", "level": "high" },
+        {
+          "category": "care_record",
+          "last_watered": "date",
+          "last_fertilized": "date",
+          "last_rePotted": "date or null",
+          "watch": false
+        },
+        { "category": "care_history", "history_water": [], "history_watch": [] }
+      ]
     },
     {
       "id": "4",
@@ -76,21 +106,31 @@
       "special_id": "in case there are multiple one of the same spieces",
       "img_url": "./src/assets/images/stock_plant.jpg",
       "img_alt": "Picture of a potted plant",
-      "info": {
-        "light": "indirekt-high",
-        "water": {
+      "info": [
+        {
+          "category": "light",
+          "exposure": "direct-filtered",
+          "intensity": "bright-mid-low",
+          "exp_time": "high"
+        },
+        {
+          "category": "water",
           "frequency_summer": ["1", "week"],
           "frequency_winter": ["1", "bi-week"],
           "amount": "moderate"
         },
-        "soil": "normal + 10% perlite",
-        "last_watered": "date",
-        "last_fertilized": "date",
-        "last_rePotted": "date or null",
-        "watch": false,
-        "history_water": [],
-        "history_watch": []
-      }
+        { "category": "soil", "type": "normal + 10% perlite" },
+        { "category": "temperature", "unit": "C", "min": 12, "max": 28 },
+        { "category": "humidity", "level": "high" },
+        {
+          "category": "care_record",
+          "last_watered": "date",
+          "last_fertilized": "date",
+          "last_rePotted": "date or null",
+          "watch": false
+        },
+        { "category": "care_history", "history_water": [], "history_watch": [] }
+      ]
     }
   ]
 }
