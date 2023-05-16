@@ -121,16 +121,66 @@
         },
         { "category": "soil", "type": "normal + 10% perlite" },
         { "category": "temperature", "unit": "C", "min": 12, "max": 28 },
-        { "category": "humidity", "level": "high" },
-        {
-          "category": "care_record",
-          "last_watered": "date",
-          "last_fertilized": "date",
-          "last_rePotted": "date or null",
-          "watch": false
-        },
-        { "category": "care_history", "history_water": [], "history_watch": [] }
+        { "category": "humidity", "level": "high" }
       ]
     }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "plant_id": 1,
+      "watered_on": "2023-05-16",
+      "fert_on": "2023-05-16",
+      "repotted_on": "date",
+      "watch": false
+    },
+    {
+      "id": 2,
+      "plant_id": 2,
+      "watered_on": "2023-05-16",
+      "fert_on": "2023-05-16",
+      "repotted_on": "2022-05-16",
+      "watch": false
+    },
+    {
+      "id": 3,
+      "plant_id": 3,
+      "watered_on": "2023-05-16",
+      "fert_on": "2023-05-16",
+      "repotted_on": null,
+      "watch": false
+    },
+    {
+      "id": 4,
+      "plant_id": 4,
+      "watered_on": "2023-05-16",
+      "fert_on": "2023-05-16",
+      "repotted_on": null,
+      "watch": false
+    }
+  ],
+  "history_water": [
+    { "id": 1, "plant_id": 1, "records": [] },
+    { "id": 2, "plant_id": 2, "records": [] },
+    { "id": 3, "plant_id": 3, "records": [] },
+    { "id": 4, "plant_id": 4, "records": [] }
+  ],
+  "history_fert": [
+    { "id": 1, "plant_id": 1, "records": [] },
+    { "id": 2, "plant_id": 2, "records": [] },
+    { "id": 3, "plant_id": 3, "records": [] },
+    { "id": 4, "plant_id": 4, "records": [] }
+  ],
+  "history_repot": [
+    { "id": 1, "plant_id": 1, "records": [] },
+    { "id": 2, "plant_id": 2, "records": [] },
+    { "id": 3, "plant_id": 3, "records": [] },
+    { "id": 4, "plant_id": 4, "records": [] }
+  ],
+  "history_watch": [
+    { "id": 1, "plant_id": 1, "records": [] },
+    { "id": 2, "plant_id": 2, "records": [] },
+    { "id": 3, "plant_id": 3, "records": [] },
+    { "id": 4, "plant_id": 4, "records": [] }
   ]
 }

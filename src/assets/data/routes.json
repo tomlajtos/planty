@@ -1,0 +1,5 @@
+{
+  "/:plants/:id/:status": "/:status/:id",
+  "/:plants/:id/:history/:water": "/:history_water/:id",
+  "/:plants/:id/:history/:fert": "/:history_fert/:id"
+}
