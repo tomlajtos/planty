@@ -1,12 +1,13 @@
 //TODO: App renders multiple time, learn about it and solve it
-import { useState, useEffect } from "react";
 import "./App.css";
+
+import { useState, useEffect } from "react";
 import { PlantList } from "./components/PlantList.jsx";
 import { Button } from "./components/ui/Button";
 import { SquareButton } from "./components/ui/SquareButton";
 import { PlantForm } from "./components/PlantForm";
 
-const data_url = "http://localhost:8080/plants";
+const baseUrl = "http://localhost:8080/plants";
 
 function App() {
   console.log("App render");
@@ -24,7 +25,7 @@ function App() {
         console.log(error);
       }
     };
-    getPlantData(data_url);
+    getPlantData(baseUrl);
     return () => {
       ignore = true;
     };
@@ -32,7 +33,7 @@ function App() {
   // console.log("plants after fetch", plants)
   // console.log(plants);
   return (
-    <div className="App py-4 px-2">
+    <div className="App py-4 px-2 text-center ">
       <h1 className="text-3xl font-bold mb-4">Plant[Y]</h1>
       <div className="mx-auto py-3 text-2xl align-center mb-4 h-16 w-full max-w-5xl border border-zinc-200">
         <SquareButton
@@ -46,6 +47,11 @@ function App() {
           type={"button"}
           text={"remove"}
           clickFn={() => console.log("CLICK")}
+        />
+        <Button
+          type={"button"}
+          className={"text-xl bg-red-900 text-white shadow-md"}
+          text={"test"}
         />
       </div>
       {plants && <PlantList plants={plants} />}

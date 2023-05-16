@@ -1,4 +1,23 @@
+import { useState, useEffect } from "react";
+import PlantStatus from "./PlantStatus";
+
 export const PlantCard = ({ plant }) => {
+  const [status, setStatus] = useState("");
+  const statusUrl = `http://localhost:8080/plants/${plant.id}/status`;
+
+  useEffect(() => {
+    let ignore = false;
+    const getStatus = async (url) => {
+      const response = await fetch(url);
+      const result = await response.json();
+      setStatus(result);
+    };
+    getStatus(statusUrl);
+    return () => {
+      ignore = true;
+    };
+  }, []);
+
   return (
     <li className="flex-col items-center p-4 bg-white shadow-lg w-full max-w-xs h-96 rounded-xl">
       <h2 className="Name text-xl mb-4 font-semibold">{plant.name}</h2>
@@ -7,7 +26,12 @@ export const PlantCard = ({ plant }) => {
         src={plant.img_url}
         alt={plant.img_alt}
       />
-      <p className="PlantInfo">plant info comes here</p>
+      <ul>
+        {/*{status.map((info) => (
+          <CareInfo key={info.id} info={info} />
+        ))}*/}
+        <PlantStatus info={status} />
+      </ul>
     </li>
   );
 };
