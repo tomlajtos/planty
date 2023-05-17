@@ -1,5 +1,3 @@
-//TODO: App renders multiple time, learn about it and solve it
-
 import "./App.css";
 import { useState, useEffect } from "react";
 import { PlantList } from "./components/PlantList.jsx";
@@ -16,7 +14,6 @@ function App() {
 
   useEffect(() => {
     let ignore = false;
-    let error = false;
 
     const getData = async (url) => {
       try {
@@ -28,13 +25,11 @@ function App() {
         }
       } catch (error) {
         console.log(error);
-        error = true;
         setError(error);
       }
     };
     getData(baseUrl);
     return () => {
-      error = false;
       ignore = true;
     };
   }, []);
