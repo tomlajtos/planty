@@ -1,6 +1,6 @@
 //TODO: App renders multiple time, learn about it and solve it
-import "./App.css";
 
+import "./App.css";
 import { useState, useEffect } from "react";
 import { PlantList } from "./components/PlantList.jsx";
 import { Button } from "./components/ui/Button";
@@ -12,24 +12,33 @@ const baseUrl = "http://localhost:8080/plants";
 function App() {
   console.log("App render");
   const [plants, setPlants] = useState([]);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     let ignore = false;
-    const getPlantData = async (url) => {
+    let error = false;
+
+    const getData = async (url) => {
       try {
         const response = await fetch(url);
         if (!ignore) {
           setPlants(await response.json());
+          setError(false);
+          console.log("yay, data");
         }
       } catch (error) {
         console.log(error);
+        error = true;
+        setError(error);
       }
     };
-    getPlantData(baseUrl);
+    getData(baseUrl);
     return () => {
+      error = false;
       ignore = true;
     };
   }, []);
+
   // console.log("plants after fetch", plants)
   // console.log(plants);
   return (
@@ -54,7 +63,12 @@ function App() {
           text={"test"}
         />
       </div>
-      {plants && <PlantList plants={plants} />}
+      {error && (
+        <h2 className="mt-8 text-2xl text-red-500">
+          Something is up, please refresh...
+        </h2>
+      )}
+      {plants ? <PlantList plants={plants} /> : <h2>Loading plant list...</h2>}
       {/* <PlantForm
       //   submitFn={(e) => {
       //     e.preventDefault();
